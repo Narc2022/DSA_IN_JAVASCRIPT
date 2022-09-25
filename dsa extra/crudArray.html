@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [30,40,20,50,10,2.5];
+        let position = 3;
+        let Insert = 90;
+        // console.log(`before ${arr}`);
+        // arr[3] = 90
+        // console.log(`after ${arr}`); 
+        console.log(arr.length);
+        for(let i = arr.length-1; i >=position-1;i--){
+            arr[i+1]=arr[i]
+        }
+        arr[position-1]=Insert;
+        console.log(`add ${arr}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
